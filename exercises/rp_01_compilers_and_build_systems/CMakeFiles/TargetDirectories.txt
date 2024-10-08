@@ -1,0 +1,8 @@
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_01_compilers_and_build_systems/CMakeFiles/edit_cache.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_01_compilers_and_build_systems/CMakeFiles/rebuild_cache.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_01_compilers_and_build_systems/src/CMakeFiles/core_library.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_01_compilers_and_build_systems/src/CMakeFiles/edit_cache.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_01_compilers_and_build_systems/src/CMakeFiles/rebuild_cache.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_01_compilers_and_build_systems/executables/CMakeFiles/many_object_in_stack_example.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_01_compilers_and_build_systems/executables/CMakeFiles/edit_cache.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_01_compilers_and_build_systems/executables/CMakeFiles/rebuild_cache.dir
