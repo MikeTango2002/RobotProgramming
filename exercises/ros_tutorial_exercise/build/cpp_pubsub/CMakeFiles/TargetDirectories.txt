@@ -1,0 +1,11 @@
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/uninstall.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/cpp_pubsub_uninstall.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/talker.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/listener.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/test.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/edit_cache.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/rebuild_cache.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/list_install_components.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/install.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/install/local.dir
+/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub/CMakeFiles/install/strip.dir

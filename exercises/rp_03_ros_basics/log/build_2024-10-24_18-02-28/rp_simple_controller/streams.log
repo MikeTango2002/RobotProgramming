@@ -1,0 +1,67 @@
+[0.123s] Invoking command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller -DCMAKE_INSTALL_PREFIX=/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller
+[0.326s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.043s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.746s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.841s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.955s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.133s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.599s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.637s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.853s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.635s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[4.775s] -- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)
+[6.182s] -- Configuring done (6.0s)
+[7.228s] -- Generating done (0.9s)
+[7.455s] -- Build files have been written to: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller
+[7.460s] Invoked command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller -DCMAKE_INSTALL_PREFIX=/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller
+[7.488s] Invoking command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller -- -j8 -l8
+[8.145s] [ 50%] [32mBuilding CXX object CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o[0m
+[11.538s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:[m[K In constructor ‘[01m[KTurtleSquareNode::[01;32m[KTurtleSquareNode[m[K()[m[K’:
+[11.540s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:27:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtleSquareNode::create_subscription<turtlesim::msg::Pose>(const char [14], int)[m[K’
+[11.542s]    27 |     position_sub = [01;31m[Kthis -> create_subscription<turtlesim::msg::Pose>("/turtle1/pose", 10)[m[K;
+[11.544s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[11.546s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.548s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.549s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[11.551s]                  from [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:5[m[K:
+[11.552s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::[01;32m[Kcreate_subscription[m[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[11.554s]   221 |   [01;36m[Kcreate_subscription[m[K(
+[11.555s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[11.556s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[11.558s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:[m[K In member function ‘[01m[Kvoid TurtleSquareNode::[01;32m[Ktimer_callback[m[K()[m[K’:
+[11.559s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:76:9:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[11.561s]    76 |         [01;31m[Kbreak[m[K;
+[11.562s]       |         [01;31m[K^~~~~[m[K
+[11.563s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:79:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kv[m[K’ was not declared in this scope
+[11.565s]    79 |       [01;31m[Kv[m[K = trans_vel;
+[11.566s]       |       [01;31m[K^[m[K
+[11.572s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:80:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kw[m[K’ was not declared in this scope
+[11.573s]    80 |       [01;31m[Kw[m[K = 0;
+[11.575s]       |       [01;31m[K^[m[K
+[11.577s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:90:9:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[11.578s]    90 |         [01;31m[Kbreak[m[K;
+[11.579s]       |         [01;31m[K^~~~~[m[K
+[11.581s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:93:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kv[m[K’ was not declared in this scope
+[11.582s]    93 |       [01;31m[Kv[m[K = 0;
+[11.583s]       |       [01;31m[K^[m[K
+[11.588s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:94:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kw[m[K’ was not declared in this scope
+[11.590s]    94 |       [01;31m[Kw[m[K = rot_vel;
+[11.591s]       |       [01;31m[K^[m[K
+[11.595s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:99:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kv[m[K’ was not declared in this scope
+[11.596s]    99 |     velocity_message.linear.x = [01;31m[Kv[m[K;
+[11.598s]       |                                 [01;31m[K^[m[K
+[11.602s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:100:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kw[m[K’ was not declared in this scope
+[11.603s]   100 |     velocity_message.angular.z = [01;31m[Kw[m[K;
+[11.604s]       |                                  [01;31m[K^[m[K
+[11.605s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:[m[K In member function ‘[01m[Kvoid TurtleSquareNode::[01;32m[Kpose_callback[m[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[11.607s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:112:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<turtlesim::msg::Pose_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct turtlesim::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[11.608s]   112 |     RCLPP_INFO(this -> get_logger(), "Turtle pos: %s", msg -> [01;31m[Kdata[m[K.c_str())
+[11.609s]       |                                                               [01;31m[K^~~~[m[K
+[11.616s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:112:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+[11.618s]   112 |     [01;31m[KRCLPP_INFO[m[K(this -> get_logger(), "Turtle pos: %s", msg -> data.c_str())
+[11.619s]       |     [01;31m[K^~~~~~~~~~[m[K
+[11.620s]       |     [32m[KRCLCPP_INFO[m[K
+[13.110s] gmake[2]: *** [CMakeFiles/turtle_square.dir/build.make:76: CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o] Error 1
+[13.114s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtle_square.dir/all] Error 2
+[13.116s] gmake: *** [Makefile:146: all] Error 2
+[13.118s] Invoked command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller -- -j8 -l8

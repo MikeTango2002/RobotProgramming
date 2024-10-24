@@ -1,0 +1,92 @@
+[0.000000] (-) TimerEvent: {}
+[0.000896] (rp_simple_controller) JobQueued: {'identifier': 'rp_simple_controller', 'dependencies': OrderedDict()}
+[0.001690] (rp_simple_controller) JobStarted: {'identifier': 'rp_simple_controller'}
+[0.046632] (rp_simple_controller) JobProgress: {'identifier': 'rp_simple_controller', 'progress': 'cmake'}
+[0.095364] (-) TimerEvent: {}
+[0.099784] (rp_simple_controller) JobProgress: {'identifier': 'rp_simple_controller', 'progress': 'build'}
+[0.112740] (rp_simple_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller', '--', '-j8', '-l8'], 'cwd': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'miketango', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/miketango', 'OLDPWD': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises', 'ROS_PYTHON_VERSION': '3', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'miketango', 'NAME': 'LAPTOP-MIKETANGO', 'WSL_INTEROP': '/run/WSL/21274_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/libnvvp:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/turch/AppData/Local/Programs/Python/Python312:/mnt/c/Users/turch/AppData/Local/Programs/Python/Python312/Scripts:/mnt/c/Windows/Microsoft.NET/Framework/v4.0.30319:/mnt/d/Programmi/mingw64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/d/Programmi/php:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/turch/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/turch/.dotnet/tools:/mnt/c/Users/turch/AppData/Local/Microsoft/WindowsApps:/snap/bin', 'WT_SESSION': 'ca94ee38-1b77-4844-92ad-a94f313e84f3', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.195558] (-) TimerEvent: {}
+[0.296414] (-) TimerEvent: {}
+[0.397783] (-) TimerEvent: {}
+[0.498994] (-) TimerEvent: {}
+[0.600236] (-) TimerEvent: {}
+[0.701672] (-) TimerEvent: {}
+[0.802719] (-) TimerEvent: {}
+[0.904022] (-) TimerEvent: {}
+[1.005258] (-) TimerEvent: {}
+[1.106479] (-) TimerEvent: {}
+[1.207804] (-) TimerEvent: {}
+[1.308966] (-) TimerEvent: {}
+[1.409927] (-) TimerEvent: {}
+[1.510810] (-) TimerEvent: {}
+[1.611632] (-) TimerEvent: {}
+[1.712647] (-) TimerEvent: {}
+[1.813769] (-) TimerEvent: {}
+[1.833797] (rp_simple_controller) StdoutLine: {'line': b'[100%] Built target turtle_square\n'}
+[1.914017] (-) TimerEvent: {}
+[1.939266] (rp_simple_controller) CommandEnded: {'returncode': 0}
+[2.014269] (-) TimerEvent: {}
+[2.066615] (rp_simple_controller) JobProgress: {'identifier': 'rp_simple_controller', 'progress': 'install'}
+[2.105038] (rp_simple_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller'], 'cwd': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'miketango', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/miketango', 'OLDPWD': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises', 'ROS_PYTHON_VERSION': '3', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'miketango', 'NAME': 'LAPTOP-MIKETANGO', 'WSL_INTEROP': '/run/WSL/21274_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/libnvvp:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/turch/AppData/Local/Programs/Python/Python312:/mnt/c/Users/turch/AppData/Local/Programs/Python/Python312/Scripts:/mnt/c/Windows/Microsoft.NET/Framework/v4.0.30319:/mnt/d/Programmi/mingw64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/d/Programmi/php:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/turch/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/turch/.dotnet/tools:/mnt/c/Users/turch/AppData/Local/Microsoft/WindowsApps:/snap/bin', 'WT_SESSION': 'ca94ee38-1b77-4844-92ad-a94f313e84f3', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[2.114566] (-) TimerEvent: {}
+[2.140868] (rp_simple_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.214742] (-) TimerEvent: {}
+[2.285431] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/lib/rp_simple_controller/turtle_square\n'}
+[2.314919] (-) TimerEvent: {}
+[2.415913] (-) TimerEvent: {}
+[2.472869] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/ament_index/resource_index/package_run_dependencies/rp_simple_controller\n'}
+[2.516031] (-) TimerEvent: {}
+[2.568015] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/ament_index/resource_index/parent_prefix_path/rp_simple_controller\n'}
+[2.616355] (-) TimerEvent: {}
+[2.638051] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/environment/ament_prefix_path.sh\n'}
+[2.716623] (-) TimerEvent: {}
+[2.744613] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/environment/ament_prefix_path.dsv\n'}
+[2.816919] (-) TimerEvent: {}
+[2.824086] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/environment/path.sh\n'}
+[2.917171] (-) TimerEvent: {}
+[2.929490] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/environment/path.dsv\n'}
+[3.017419] (-) TimerEvent: {}
+[3.025779] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/local_setup.bash\n'}
+[3.117213] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/local_setup.sh\n'}
+[3.120121] (-) TimerEvent: {}
+[3.208305] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/local_setup.zsh\n'}
+[3.220398] (-) TimerEvent: {}
+[3.289267] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/local_setup.dsv\n'}
+[3.320630] (-) TimerEvent: {}
+[3.349508] (rp_simple_controller) StdoutLine: {'line': b'-- Installing: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/package.dsv\n'}
+[3.420940] (-) TimerEvent: {}
+[3.522165] (-) TimerEvent: {}
+[3.623754] (-) TimerEvent: {}
+[3.627556] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/ament_index/resource_index/packages/rp_simple_controller\n'}
+[3.721143] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/cmake/rp_simple_controllerConfig.cmake\n'}
+[3.723938] (-) TimerEvent: {}
+[3.780543] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/cmake/rp_simple_controllerConfig-version.cmake\n'}
+[3.824183] (-) TimerEvent: {}
+[3.855058] (rp_simple_controller) StdoutLine: {'line': b'-- Up-to-date: /mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller/share/rp_simple_controller/package.xml\n'}
+[3.887315] (rp_simple_controller) CommandEnded: {'returncode': 0}
+[3.924468] (-) TimerEvent: {}
+[4.025625] (-) TimerEvent: {}
+[4.127279] (-) TimerEvent: {}
+[4.228428] (-) TimerEvent: {}
+[4.329653] (-) TimerEvent: {}
+[4.430905] (-) TimerEvent: {}
+[4.532003] (-) TimerEvent: {}
+[4.633041] (-) TimerEvent: {}
+[4.733835] (-) TimerEvent: {}
+[4.834675] (-) TimerEvent: {}
+[4.935439] (-) TimerEvent: {}
+[5.036421] (-) TimerEvent: {}
+[5.137390] (-) TimerEvent: {}
+[5.238266] (-) TimerEvent: {}
+[5.339353] (-) TimerEvent: {}
+[5.440597] (-) TimerEvent: {}
+[5.541941] (-) TimerEvent: {}
+[5.643006] (-) TimerEvent: {}
+[5.744353] (-) TimerEvent: {}
+[5.845619] (-) TimerEvent: {}
+[5.946881] (-) TimerEvent: {}
+[6.048087] (-) TimerEvent: {}
+[6.149379] (-) TimerEvent: {}
+[6.250589] (-) TimerEvent: {}
+[6.290792] (rp_simple_controller) JobEnded: {'identifier': 'rp_simple_controller', 'rc': 0}
+[6.321769] (-) EventReactorShutdown: {}

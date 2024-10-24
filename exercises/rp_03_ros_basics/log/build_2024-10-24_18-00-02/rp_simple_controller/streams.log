@@ -1,0 +1,36 @@
+[0.096s] Invoking command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller -DCMAKE_INSTALL_PREFIX=/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller
+[0.835s] -- The C compiler identification is GNU 13.2.0
+[2.904s] -- The CXX compiler identification is GNU 13.2.0
+[4.930s] -- Detecting C compiler ABI info
+[7.237s] -- Detecting C compiler ABI info - done
+[7.348s] -- Check for working C compiler: /usr/bin/cc - skipped
+[7.351s] -- Detecting C compile features
+[7.353s] -- Detecting C compile features - done
+[7.723s] -- Detecting CXX compiler ABI info
+[10.163s] -- Detecting CXX compiler ABI info - done
+[10.297s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[10.300s] -- Detecting CXX compile features
+[10.303s] -- Detecting CXX compile features - done
+[10.475s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[10.833s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[12.333s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[13.539s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[13.889s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[14.240s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[14.648s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[15.624s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[15.742s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[16.346s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[17.260s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[17.628s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[18.774s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[19.071s] -- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)
+[19.474s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[19.476s]   ament_target_dependencies() the passed package name 'turtle_sim' was not
+[19.477s]   found before
+[19.479s] Call Stack (most recent call first):
+[19.480s]   CMakeLists.txt:26 (ament_target_dependencies)
+[19.482s] 
+[19.484s] [0m
+[19.486s] -- Configuring incomplete, errors occurred!
+[19.519s] Invoked command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller' returned '1': CMAKE_PREFIX_PATH=/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller -DCMAKE_INSTALL_PREFIX=/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller

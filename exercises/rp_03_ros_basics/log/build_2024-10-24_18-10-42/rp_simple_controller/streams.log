@@ -1,0 +1,17 @@
+[0.151s] Invoking command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller -- -j8 -l8
+[1.712s] [ 50%] [32mBuilding CXX object CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o[0m
+[4.676s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.678s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[4.680s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[4.683s]                  from [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:5[m[K:
+[4.685s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:[m[K In member function ‘[01m[Kvoid TurtleSquareNode::[01;32m[Kpose_callback[m[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.687s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:127:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<turtlesim::msg::Pose_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct turtlesim::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[4.689s]   127 |     RCLCPP_INFO(this -> get_logger(), "Turtle pos: %s", msg -> [01;31m[Kdata[m[K.c_str())
+[4.690s]       |                                                                [01;31m[K^~~~[m[K
+[4.692s] [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:128:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[4.693s]   128 |   [01;31m[K}[m[K
+[4.695s]       |   [01;31m[K^[m[K
+[7.523s] gmake[2]: *** [CMakeFiles/turtle_square.dir/build.make:76: CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o] Error 1
+[7.529s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtle_square.dir/all] Error 2
+[7.532s] gmake: *** [Makefile:146: all] Error 2
+[7.534s] Invoked command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller -- -j8 -l8

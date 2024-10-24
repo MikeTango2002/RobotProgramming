@@ -1,0 +1,74 @@
+[0.103s] Invoking command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub
+[1.270s] -- The C compiler identification is GNU 11.4.0
+[3.400s] -- The CXX compiler identification is GNU 11.4.0
+[4.971s] -- Detecting C compiler ABI info
+[7.054s] -- Detecting C compiler ABI info - done
+[7.148s] -- Check for working C compiler: /usr/bin/cc - skipped
+[7.151s] -- Detecting C compile features
+[7.154s] -- Detecting C compile features - done
+[7.399s] -- Detecting CXX compiler ABI info
+[9.256s] -- Detecting CXX compiler ABI info - done
+[9.353s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[9.356s] -- Detecting CXX compile features
+[9.358s] -- Detecting CXX compile features - done
+[9.595s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[10.256s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[10.777s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[11.376s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[11.396s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[11.432s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[11.491s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.553s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.713s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[11.728s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[16.146s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[21.412s] -- Found FastRTPS: /opt/ros/humble/include  
+[30.321s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[30.445s] -- Looking for pthread.h
+[32.378s] -- Looking for pthread.h - found
+[32.398s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[34.167s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[34.180s] -- Found Threads: TRUE  
+[34.316s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[36.752s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[36.755s] -- Configured cppcheck include dirs: 
+[36.758s] -- Configured cppcheck exclude dirs and/or files: 
+[37.201s] -- Added test 'lint_cmake' to check CMake code style
+[38.620s] -- Added test 'uncrustify' to check C / C++ code style
+[38.622s] -- Configured uncrustify additional arguments: 
+[38.842s] -- Added test 'xmllint' to check XML markup files
+[39.304s] -- Configuring done
+[40.584s] -- Generating done
+[40.862s] -- Build files have been written to: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub
+[40.867s] Invoked command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub
+[40.909s] Invoking command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub -- -j8 -l8
+[41.576s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[41.581s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[47.997s] [ 75%] [32m[1mLinking CXX executable talker[0m
+[50.557s] [ 75%] Built target talker
+[54.260s] [100%] [32m[1mLinking CXX executable listener[0m
+[61.120s] [100%] Built target listener
+[61.194s] Invoked command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub -- -j8 -l8
+[61.330s] Invoking command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub
+[61.353s] -- Install configuration: ""
+[61.400s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/lib/cpp_pubsub/talker
+[61.758s] -- Set runtime path of "/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[61.876s] -- Up-to-date: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/lib/cpp_pubsub/talker
+[62.035s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/lib/cpp_pubsub/listener
+[62.605s] -- Set runtime path of "/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[62.769s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[63.180s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[63.449s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[63.631s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[63.845s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[64.132s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[64.428s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[64.572s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[64.777s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[64.991s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[65.120s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[65.395s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[65.644s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[65.932s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[66.250s] -- Installing: /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[66.490s] Invoked command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/ros_tutorial_exercise/build/cpp_pubsub

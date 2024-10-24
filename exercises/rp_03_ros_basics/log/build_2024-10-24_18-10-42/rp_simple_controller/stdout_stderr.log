@@ -1,0 +1,15 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o[0m
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:5[m[K:
+[01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:[m[K In member function ‘[01m[Kvoid TurtleSquareNode::[01;32m[Kpose_callback[m[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:127:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<turtlesim::msg::Pose_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct turtlesim::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+  127 |     RCLCPP_INFO(this -> get_logger(), "Turtle pos: %s", msg -> [01;31m[Kdata[m[K.c_str())
+      |                                                                [01;31m[K^~~~[m[K
+[01m[K/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:128:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+  128 |   [01;31m[K}[m[K
+      |   [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/turtle_square.dir/build.make:76: CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtle_square.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

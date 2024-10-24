@@ -1,0 +1,238 @@
+[0.000000] (-) TimerEvent: {}
+[0.001936] (rp_simple_controller) JobQueued: {'identifier': 'rp_simple_controller', 'dependencies': OrderedDict()}
+[0.002420] (rp_simple_controller) JobStarted: {'identifier': 'rp_simple_controller'}
+[0.055642] (rp_simple_controller) JobProgress: {'identifier': 'rp_simple_controller', 'progress': 'cmake'}
+[0.076762] (rp_simple_controller) Command: {'cmd': ['/usr/bin/cmake', '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller', '-DCMAKE_INSTALL_PREFIX=/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller'], 'cwd': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'miketango', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/miketango', 'OLDPWD': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises', 'ROS_PYTHON_VERSION': '3', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'miketango', 'NAME': 'LAPTOP-MIKETANGO', 'WSL_INTEROP': '/run/WSL/10_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/libnvvp:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/turch/AppData/Local/Programs/Python/Python312:/mnt/c/Users/turch/AppData/Local/Programs/Python/Python312/Scripts:/mnt/c/Windows/Microsoft.NET/Framework/v4.0.30319:/mnt/d/Programmi/mingw64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/d/Programmi/php:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/turch/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/turch/.dotnet/tools:/mnt/c/Users/turch/AppData/Local/Microsoft/WindowsApps:/snap/bin', 'WT_SESSION': '598aa698-19cb-4fba-9530-2050280ffd00', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099928] (-) TimerEvent: {}
+[0.200650] (-) TimerEvent: {}
+[0.301453] (-) TimerEvent: {}
+[0.402312] (-) TimerEvent: {}
+[0.503342] (-) TimerEvent: {}
+[0.604629] (-) TimerEvent: {}
+[0.705943] (-) TimerEvent: {}
+[0.806772] (-) TimerEvent: {}
+[0.836565] (rp_simple_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.906964] (-) TimerEvent: {}
+[1.008655] (-) TimerEvent: {}
+[1.109940] (-) TimerEvent: {}
+[1.210987] (-) TimerEvent: {}
+[1.311908] (-) TimerEvent: {}
+[1.412769] (-) TimerEvent: {}
+[1.513757] (-) TimerEvent: {}
+[1.614779] (-) TimerEvent: {}
+[1.715631] (-) TimerEvent: {}
+[1.816514] (-) TimerEvent: {}
+[1.917320] (-) TimerEvent: {}
+[2.018043] (-) TimerEvent: {}
+[2.118953] (-) TimerEvent: {}
+[2.219960] (-) TimerEvent: {}
+[2.320922] (-) TimerEvent: {}
+[2.421799] (-) TimerEvent: {}
+[2.522702] (-) TimerEvent: {}
+[2.623761] (-) TimerEvent: {}
+[2.724845] (-) TimerEvent: {}
+[2.825847] (-) TimerEvent: {}
+[2.905479] (rp_simple_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[2.925994] (-) TimerEvent: {}
+[3.026772] (-) TimerEvent: {}
+[3.127569] (-) TimerEvent: {}
+[3.228441] (-) TimerEvent: {}
+[3.329154] (-) TimerEvent: {}
+[3.429834] (-) TimerEvent: {}
+[3.530633] (-) TimerEvent: {}
+[3.631639] (-) TimerEvent: {}
+[3.732601] (-) TimerEvent: {}
+[3.833639] (-) TimerEvent: {}
+[3.934645] (-) TimerEvent: {}
+[4.035507] (-) TimerEvent: {}
+[4.137050] (-) TimerEvent: {}
+[4.238319] (-) TimerEvent: {}
+[4.339811] (-) TimerEvent: {}
+[4.440916] (-) TimerEvent: {}
+[4.542076] (-) TimerEvent: {}
+[4.643358] (-) TimerEvent: {}
+[4.744336] (-) TimerEvent: {}
+[4.845535] (-) TimerEvent: {}
+[4.931915] (rp_simple_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.945681] (-) TimerEvent: {}
+[5.046934] (-) TimerEvent: {}
+[5.148277] (-) TimerEvent: {}
+[5.249428] (-) TimerEvent: {}
+[5.350373] (-) TimerEvent: {}
+[5.451663] (-) TimerEvent: {}
+[5.552869] (-) TimerEvent: {}
+[5.654165] (-) TimerEvent: {}
+[5.755330] (-) TimerEvent: {}
+[5.856198] (-) TimerEvent: {}
+[5.956840] (-) TimerEvent: {}
+[6.057610] (-) TimerEvent: {}
+[6.158563] (-) TimerEvent: {}
+[6.259440] (-) TimerEvent: {}
+[6.360645] (-) TimerEvent: {}
+[6.461898] (-) TimerEvent: {}
+[6.563200] (-) TimerEvent: {}
+[6.664326] (-) TimerEvent: {}
+[6.765643] (-) TimerEvent: {}
+[6.866867] (-) TimerEvent: {}
+[6.968159] (-) TimerEvent: {}
+[7.069217] (-) TimerEvent: {}
+[7.170471] (-) TimerEvent: {}
+[7.237574] (rp_simple_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.270688] (-) TimerEvent: {}
+[7.349188] (rp_simple_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.351700] (rp_simple_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.354573] (rp_simple_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.370949] (-) TimerEvent: {}
+[7.472051] (-) TimerEvent: {}
+[7.572983] (-) TimerEvent: {}
+[7.673814] (-) TimerEvent: {}
+[7.724358] (rp_simple_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.774084] (-) TimerEvent: {}
+[7.875241] (-) TimerEvent: {}
+[7.976283] (-) TimerEvent: {}
+[8.077073] (-) TimerEvent: {}
+[8.178009] (-) TimerEvent: {}
+[8.278688] (-) TimerEvent: {}
+[8.379507] (-) TimerEvent: {}
+[8.480819] (-) TimerEvent: {}
+[8.582117] (-) TimerEvent: {}
+[8.683281] (-) TimerEvent: {}
+[8.784401] (-) TimerEvent: {}
+[8.885659] (-) TimerEvent: {}
+[8.986894] (-) TimerEvent: {}
+[9.088058] (-) TimerEvent: {}
+[9.189192] (-) TimerEvent: {}
+[9.290015] (-) TimerEvent: {}
+[9.391230] (-) TimerEvent: {}
+[9.498358] (-) TimerEvent: {}
+[9.599147] (-) TimerEvent: {}
+[9.700139] (-) TimerEvent: {}
+[9.801325] (-) TimerEvent: {}
+[9.902437] (-) TimerEvent: {}
+[10.003383] (-) TimerEvent: {}
+[10.104148] (-) TimerEvent: {}
+[10.163695] (rp_simple_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[10.204343] (-) TimerEvent: {}
+[10.297740] (rp_simple_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[10.300629] (rp_simple_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[10.303572] (rp_simple_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[10.306519] (-) TimerEvent: {}
+[10.407762] (-) TimerEvent: {}
+[10.477282] (rp_simple_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[10.507967] (-) TimerEvent: {}
+[10.608851] (-) TimerEvent: {}
+[10.709695] (-) TimerEvent: {}
+[10.810546] (-) TimerEvent: {}
+[10.834435] (rp_simple_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[10.910910] (-) TimerEvent: {}
+[11.011861] (-) TimerEvent: {}
+[11.112743] (-) TimerEvent: {}
+[11.213825] (-) TimerEvent: {}
+[11.315252] (-) TimerEvent: {}
+[11.416539] (-) TimerEvent: {}
+[11.517681] (-) TimerEvent: {}
+[11.618593] (-) TimerEvent: {}
+[11.719781] (-) TimerEvent: {}
+[11.821033] (-) TimerEvent: {}
+[11.922145] (-) TimerEvent: {}
+[12.023429] (-) TimerEvent: {}
+[12.124431] (-) TimerEvent: {}
+[12.225447] (-) TimerEvent: {}
+[12.326280] (-) TimerEvent: {}
+[12.331230] (rp_simple_controller) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[12.426547] (-) TimerEvent: {}
+[12.527759] (-) TimerEvent: {}
+[12.628856] (-) TimerEvent: {}
+[12.730000] (-) TimerEvent: {}
+[12.830698] (-) TimerEvent: {}
+[12.931782] (-) TimerEvent: {}
+[13.032786] (-) TimerEvent: {}
+[13.133744] (-) TimerEvent: {}
+[13.234866] (-) TimerEvent: {}
+[13.335941] (-) TimerEvent: {}
+[13.437072] (-) TimerEvent: {}
+[13.538246] (-) TimerEvent: {}
+[13.539787] (rp_simple_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[13.638568] (-) TimerEvent: {}
+[13.739803] (-) TimerEvent: {}
+[13.841068] (-) TimerEvent: {}
+[13.890033] (rp_simple_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[13.941330] (-) TimerEvent: {}
+[14.042520] (-) TimerEvent: {}
+[14.143461] (-) TimerEvent: {}
+[14.240552] (rp_simple_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[14.243446] (-) TimerEvent: {}
+[14.344580] (-) TimerEvent: {}
+[14.445751] (-) TimerEvent: {}
+[14.546747] (-) TimerEvent: {}
+[14.648140] (-) TimerEvent: {}
+[14.649303] (rp_simple_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.748333] (-) TimerEvent: {}
+[14.849192] (-) TimerEvent: {}
+[14.950374] (-) TimerEvent: {}
+[15.051374] (-) TimerEvent: {}
+[15.152473] (-) TimerEvent: {}
+[15.253215] (-) TimerEvent: {}
+[15.354013] (-) TimerEvent: {}
+[15.455247] (-) TimerEvent: {}
+[15.556306] (-) TimerEvent: {}
+[15.625452] (rp_simple_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[15.656508] (-) TimerEvent: {}
+[15.743830] (rp_simple_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[15.756655] (-) TimerEvent: {}
+[15.857765] (-) TimerEvent: {}
+[15.958689] (-) TimerEvent: {}
+[16.059413] (-) TimerEvent: {}
+[16.160505] (-) TimerEvent: {}
+[16.261688] (-) TimerEvent: {}
+[16.347132] (rp_simple_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[16.361967] (-) TimerEvent: {}
+[16.463132] (-) TimerEvent: {}
+[16.564302] (-) TimerEvent: {}
+[16.665507] (-) TimerEvent: {}
+[16.766404] (-) TimerEvent: {}
+[16.867687] (-) TimerEvent: {}
+[16.968806] (-) TimerEvent: {}
+[17.069969] (-) TimerEvent: {}
+[17.170916] (-) TimerEvent: {}
+[17.262170] (rp_simple_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[17.271070] (-) TimerEvent: {}
+[17.371810] (-) TimerEvent: {}
+[17.472526] (-) TimerEvent: {}
+[17.573171] (-) TimerEvent: {}
+[17.630407] (rp_simple_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[17.673369] (-) TimerEvent: {}
+[17.774093] (-) TimerEvent: {}
+[17.875266] (-) TimerEvent: {}
+[17.976241] (-) TimerEvent: {}
+[18.077010] (-) TimerEvent: {}
+[18.177855] (-) TimerEvent: {}
+[18.278747] (-) TimerEvent: {}
+[18.379831] (-) TimerEvent: {}
+[18.480456] (-) TimerEvent: {}
+[18.581208] (-) TimerEvent: {}
+[18.682315] (-) TimerEvent: {}
+[18.775499] (rp_simple_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[18.782449] (-) TimerEvent: {}
+[18.883494] (-) TimerEvent: {}
+[18.984888] (-) TimerEvent: {}
+[19.072635] (rp_simple_controller) StdoutLine: {'line': b'-- Found turtlesim: 1.8.3 (/opt/ros/jazzy/share/turtlesim/cmake)\n'}
+[19.084959] (-) TimerEvent: {}
+[19.186032] (-) TimerEvent: {}
+[19.287114] (-) TimerEvent: {}
+[19.388249] (-) TimerEvent: {}
+[19.475705] (rp_simple_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):\n'}
+[19.477558] (rp_simple_controller) StderrLine: {'line': b"  ament_target_dependencies() the passed package name 'turtle_sim' was not\n"}
+[19.479245] (rp_simple_controller) StderrLine: {'line': b'  found before\n'}
+[19.480877] (rp_simple_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[19.482546] (rp_simple_controller) StderrLine: {'line': b'  CMakeLists.txt:26 (ament_target_dependencies)\n'}
+[19.484135] (rp_simple_controller) StderrLine: {'line': b'\n'}
+[19.485678] (rp_simple_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[19.487323] (rp_simple_controller) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[19.489117] (-) TimerEvent: {}
+[19.521315] (rp_simple_controller) CommandEnded: {'returncode': 1}
+[19.589354] (-) TimerEvent: {}
+[19.690744] (-) TimerEvent: {}
+[19.791355] (-) TimerEvent: {}
+[19.845008] (rp_simple_controller) JobEnded: {'identifier': 'rp_simple_controller', 'rc': 1}
+[19.861449] (-) EventReactorShutdown: {}

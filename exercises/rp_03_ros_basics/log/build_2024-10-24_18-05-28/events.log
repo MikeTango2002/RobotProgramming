@@ -1,0 +1,110 @@
+[0.000000] (-) TimerEvent: {}
+[0.000716] (rp_simple_controller) JobQueued: {'identifier': 'rp_simple_controller', 'dependencies': OrderedDict()}
+[0.001348] (rp_simple_controller) JobStarted: {'identifier': 'rp_simple_controller'}
+[0.049204] (rp_simple_controller) JobProgress: {'identifier': 'rp_simple_controller', 'progress': 'cmake'}
+[0.094420] (-) TimerEvent: {}
+[0.123573] (rp_simple_controller) JobProgress: {'identifier': 'rp_simple_controller', 'progress': 'build'}
+[0.145214] (rp_simple_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller', '--', '-j8', '-l8'], 'cwd': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'miketango', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib', 'WT_PROFILE_ID': '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}', 'HOME': '/home/miketango', 'OLDPWD': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises', 'ROS_PYTHON_VERSION': '3', 'WSL_DISTRO_NAME': 'Ubuntu', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'miketango', 'NAME': 'LAPTOP-MIKETANGO', 'WSL_INTEROP': '/run/WSL/10_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/libnvvp:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/turch/AppData/Local/Programs/Python/Python312:/mnt/c/Users/turch/AppData/Local/Programs/Python/Python312/Scripts:/mnt/c/Windows/Microsoft.NET/Framework/v4.0.30319:/mnt/d/Programmi/mingw64/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/d/Programmi/php:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2023.1.0/:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/turch/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/turch/.dotnet/tools:/mnt/c/Users/turch/AppData/Local/Microsoft/WindowsApps:/snap/bin', 'WT_SESSION': '598aa698-19cb-4fba-9530-2050280ffd00', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'WT_SESSION:WT_PROFILE_ID:', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.194625] (-) TimerEvent: {}
+[0.295516] (-) TimerEvent: {}
+[0.396699] (-) TimerEvent: {}
+[0.497971] (-) TimerEvent: {}
+[0.599331] (-) TimerEvent: {}
+[0.700618] (-) TimerEvent: {}
+[0.801843] (-) TimerEvent: {}
+[0.903190] (-) TimerEvent: {}
+[1.004437] (-) TimerEvent: {}
+[1.105618] (-) TimerEvent: {}
+[1.206466] (-) TimerEvent: {}
+[1.307289] (-) TimerEvent: {}
+[1.408082] (-) TimerEvent: {}
+[1.508914] (-) TimerEvent: {}
+[1.609784] (-) TimerEvent: {}
+[1.710753] (-) TimerEvent: {}
+[1.741080] (rp_simple_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o\x1b[0m\n'}
+[1.810965] (-) TimerEvent: {}
+[1.912173] (-) TimerEvent: {}
+[2.013079] (-) TimerEvent: {}
+[2.114213] (-) TimerEvent: {}
+[2.215236] (-) TimerEvent: {}
+[2.316187] (-) TimerEvent: {}
+[2.417191] (-) TimerEvent: {}
+[2.518092] (-) TimerEvent: {}
+[2.618994] (-) TimerEvent: {}
+[2.720030] (-) TimerEvent: {}
+[2.821044] (-) TimerEvent: {}
+[2.922117] (-) TimerEvent: {}
+[3.023257] (-) TimerEvent: {}
+[3.124453] (-) TimerEvent: {}
+[3.225389] (-) TimerEvent: {}
+[3.326608] (-) TimerEvent: {}
+[3.428248] (-) TimerEvent: {}
+[3.529214] (-) TimerEvent: {}
+[3.630032] (-) TimerEvent: {}
+[3.730973] (-) TimerEvent: {}
+[3.831892] (-) TimerEvent: {}
+[3.932927] (-) TimerEvent: {}
+[4.034000] (-) TimerEvent: {}
+[4.135013] (-) TimerEvent: {}
+[4.235951] (-) TimerEvent: {}
+[4.336858] (-) TimerEvent: {}
+[4.437676] (-) TimerEvent: {}
+[4.538616] (-) TimerEvent: {}
+[4.639438] (-) TimerEvent: {}
+[4.740271] (-) TimerEvent: {}
+[4.841184] (-) TimerEvent: {}
+[4.942168] (-) TimerEvent: {}
+[5.043211] (-) TimerEvent: {}
+[5.132198] (rp_simple_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTurtleSquareNode::\x1b[01;32m\x1b[KTurtleSquareNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.136384] (rp_simple_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:27:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTurtleSquareNode::create_subscription<turtlesim::msg::Pose>(const char [14], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.138613] (rp_simple_controller) StderrLine: {'line': b'   27 |     position_sub = \x1b[01;31m\x1b[Kthis -> create_subscription<turtlesim::msg::Pose>("/turtle1/pose", 10)\x1b[m\x1b[K;\n'}
+[5.141103] (rp_simple_controller) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.143415] (-) TimerEvent: {}
+[5.144080] (rp_simple_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[5.146242] (rp_simple_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[5.148208] (rp_simple_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[5.149968] (rp_simple_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:5\x1b[m\x1b[K:\n'}
+[5.151541] (rp_simple_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::\x1b[01;32m\x1b[Kcreate_subscription\x1b[m\x1b[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.153156] (rp_simple_controller) StderrLine: {'line': b'  221 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[5.155123] (rp_simple_controller) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.156951] (rp_simple_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 2 provided\n'}
+[5.159159] (rp_simple_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[5.161554] (rp_simple_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[5.163370] (rp_simple_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K:\n'}
+[5.165121] (rp_simple_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtleSquareNode::\x1b[01;32m\x1b[Kpose_callback\x1b[m\x1b[K(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.166883] (rp_simple_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:127:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing std::__shared_ptr_access<turtlesim::msg::Pose_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct turtlesim::msg::Pose_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct turtlesim::msg::Pose_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.168586] (rp_simple_controller) StderrLine: {'line': b'  127 |     RCLCPP_INFO(this -> get_logger(), "Turtle pos: %s", msg -> \x1b[01;31m\x1b[Kdata\x1b[m\x1b[K.c_str())\n'}
+[5.170174] (rp_simple_controller) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.171900] (rp_simple_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/mnt/d/Linux/Universit\xc3\xa0/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller/src/turtle_square.cpp:128:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.173663] (rp_simple_controller) StderrLine: {'line': b'  128 |   \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[5.175521] (rp_simple_controller) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.243638] (-) TimerEvent: {}
+[5.344512] (-) TimerEvent: {}
+[5.449812] (-) TimerEvent: {}
+[5.550818] (-) TimerEvent: {}
+[5.651787] (-) TimerEvent: {}
+[5.752624] (-) TimerEvent: {}
+[5.853473] (-) TimerEvent: {}
+[5.954312] (-) TimerEvent: {}
+[6.055225] (-) TimerEvent: {}
+[6.156096] (-) TimerEvent: {}
+[6.257014] (-) TimerEvent: {}
+[6.358002] (-) TimerEvent: {}
+[6.459085] (-) TimerEvent: {}
+[6.560045] (-) TimerEvent: {}
+[6.660874] (-) TimerEvent: {}
+[6.761685] (-) TimerEvent: {}
+[6.844017] (rp_simple_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/turtle_square.dir/build.make:76: CMakeFiles/turtle_square.dir/src/turtle_square.cpp.o] Error 1\n'}
+[6.849542] (rp_simple_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtle_square.dir/all] Error 2\n'}
+[6.851507] (rp_simple_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.854714] (rp_simple_controller) CommandEnded: {'returncode': 2}
+[6.861839] (-) TimerEvent: {}
+[6.962610] (-) TimerEvent: {}
+[7.063862] (-) TimerEvent: {}
+[7.165082] (-) TimerEvent: {}
+[7.266453] (-) TimerEvent: {}
+[7.367508] (-) TimerEvent: {}
+[7.468345] (-) TimerEvent: {}
+[7.545638] (rp_simple_controller) JobEnded: {'identifier': 'rp_simple_controller', 'rc': 2}
+[7.576242] (-) TimerEvent: {}
+[7.577134] (-) EventReactorShutdown: {}

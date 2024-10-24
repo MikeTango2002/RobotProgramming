@@ -1,0 +1,30 @@
+[0.165s] Invoking command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller': CMAKE_PREFIX_PATH=/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller -DCMAKE_INSTALL_PREFIX=/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller
+[0.437s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.143s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.942s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.106s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.284s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.483s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.928s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.957s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.036s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.844s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[9.051s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[9.052s]   By not providing "Findturtle_sim.cmake" in CMAKE_MODULE_PATH this project
+[9.054s]   has asked CMake to find a package configuration file provided by
+[9.056s]   "turtle_sim", but CMake did not find one.
+[9.058s] 
+[9.059s]   Could not find a package configuration file provided by "turtle_sim" with
+[9.061s]   any of the following names:
+[9.063s] 
+[9.064s]     turtle_simConfig.cmake
+[9.066s]     turtle_sim-config.cmake
+[9.067s] 
+[9.068s]   Add the installation prefix of "turtle_sim" to CMAKE_PREFIX_PATH or set
+[9.070s]   "turtle_sim_DIR" to a directory containing one of the above files.  If
+[9.072s]   "turtle_sim" provides a separate development package or SDK, be sure it has
+[9.073s]   been installed.
+[9.075s] 
+[9.076s] [0m
+[9.078s] -- Configuring incomplete, errors occurred!
+[9.091s] Invoked command in '/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/build/rp_simple_controller' returned '1': CMAKE_PREFIX_PATH=/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/src/rp_simple_controller -DCMAKE_INSTALL_PREFIX=/mnt/d/Linux/Università/Magistrale/Anno I/robot_programming/RobotProgramming/exercises/rp_03_ros_basics/install/rp_simple_controller
