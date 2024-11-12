@@ -119,7 +119,7 @@ struct Rotation2f {
   }
 
   
-  //returns the inverse (transposed)
+  //returns the inverse (transposed), because the inverse of a rotation matrix is equal to the transpose of the rotation matrix (BECAUSE ROTATION MATRICES ARE ORTHOGONAL)
   inline Rotation2f inverse() const {
     Rotation2f ret=*this;
     ret.transposeInPlace();
@@ -185,6 +185,10 @@ inline ostream& operator << (ostream& os, const Rotation2f& src){
 
 
 struct Isometry2f {
+  //In this case, the last row of the Isometry matrix [0 0 1] is omitted
+  //The real form of this matrix is: [[R | t]
+  //                                  [0 | 1]]
+  //where: R is the 2x2 rotation matrix and  t is a 2D vector
   Vec2f t;
   Rotation2f R;
   Isometry2f(){}
@@ -203,8 +207,10 @@ struct Isometry2f {
     t.fill(0);
     R.setIdentity();
   }
-
+  
   inline Isometry2f operator*(const Isometry2f& src) const {
+  // [[R | t]   *   [[src.R | src.t]    =   [[R * src.R | R * src.t + 1]
+  //  [0 | 1]]       [  0   |   1  ]]        [    0     |      1       ]]
     Isometry2f ret;
     ret.R=R*src.R;
     ret.t=R*src.t+t;
@@ -213,7 +219,7 @@ struct Isometry2f {
 
   inline Isometry2f inverse() const {
     Isometry2f ret;
-    ret.R=R.inverse();
+    ret.R=R.inverse(); 
     ret.t=-(ret.R*t);
     return ret;
   }
