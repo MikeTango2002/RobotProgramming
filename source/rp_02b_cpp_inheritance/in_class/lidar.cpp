@@ -19,7 +19,7 @@ Lidar::Lidar(LaserScan& my_scan, WorldItem* p):
 const GridMap* Lidar::getGridMap() const {
   const WorldItem* aux=this;
   while (aux) {
-    const GridMap* gmap=dynamic_cast<const GridMap*>(aux);
+    const GridMap* gmap=dynamic_cast<const GridMap*>(aux); //Dynamic cast tries to cast the object. If it is not possibile(so this pointer doesn't represent a GridMap object), returns nullptr
     if (gmap)
       return gmap;
     aux=aux->parent;
