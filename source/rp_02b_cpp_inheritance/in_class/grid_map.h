@@ -23,12 +23,12 @@ struct GridMap:
           WorldItem* p,
           const Isometry2f& pose_in_parent_);
   
-  inline Vec2f g2w(const Vec2f g) const {
+  inline Vec2f g2w(const Vec2f g) const { //grid to world
     return _piw*(g-grid_origin)*resolution;
   }
 
   
-  inline Vec2f w2g(const Vec2f w) const {
+  inline Vec2f w2g(const Vec2f w) const { //world to grid            
     return (_ipiw*w)*inv_resolution+grid_origin;
   }
 

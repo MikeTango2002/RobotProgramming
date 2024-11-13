@@ -8,10 +8,10 @@
 struct WorldItem;
 struct World;
 
-struct WorldItemVector {
+struct WorldItemVector { // It is a dynamic vector (so it is a pointer) containing pointers to WorldItem object
   using ItemType=WorldItem*;
   int _size=0;
-  ItemType* _values=0;
+  ItemType* _values=0; //this is a pointer to WorldItem pointers
 
   inline int size() const {return _size;}
   void resize(int new_size);
@@ -40,7 +40,7 @@ struct WorldItemVector {
 
 struct WorldItem{
   WorldItem* parent=0; // if 0 is the world:)
-  WorldItemVector children;
+  WorldItemVector children; //Every WorldItem has a vector of his children
   Isometry2f pose_in_parent;
   float radius;
 

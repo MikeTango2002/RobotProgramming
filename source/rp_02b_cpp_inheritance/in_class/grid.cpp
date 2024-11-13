@@ -30,7 +30,7 @@ Grid::~Grid() {
 int Grid::scanSegment(int& x,
                       int& y,
                       float angle,
-                      const CellType& val_min,
+                      const CellType& val_min, //value of a wall pixel or of an obstacle pixel
                       const int max_range) const {
 
   Vec2f dir(cos(angle),
@@ -46,7 +46,7 @@ int Grid::scanSegment(int& x,
     if (target<val_min){
       x=current.x();
       y=current.y();
-      return range;
+      return range; //I scanned a wall or an obstacle
     }
     current+=dir;
     ++range;

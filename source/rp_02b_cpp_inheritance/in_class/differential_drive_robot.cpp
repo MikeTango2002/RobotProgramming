@@ -10,7 +10,7 @@ void DifferentialDriveRobot::timerTick(float dt)  {
     //cerr << "collision" << endl;
     pose_in_parent=old_pose_in_parent;
   }
-  WorldItem::timerTick(dt);
+  WorldItem::timerTick(dt); //Propagates the timerTick to its children
 }
 
 void DifferentialDriveRobot::draw(Canvas& canvas) const {

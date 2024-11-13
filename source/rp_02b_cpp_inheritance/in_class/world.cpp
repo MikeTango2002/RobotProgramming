@@ -42,7 +42,8 @@ bool WorldItem::isDescendant(const WorldItem* ancestor) const {
 
 bool WorldItem::canCollide(const WorldItem* other) const {
   return (! this->isDescendant(other) &&
-          ! other->isDescendant(this));
+          ! other->isDescendant(this)); //"this" is a pointer to the current instance of the class.
+                                        //"*this" is a reference to the current instance of the class.
 }
 
 WorldItem::WorldItem(WorldItem* parent_):
@@ -61,9 +62,9 @@ WorldItem::WorldItem(WorldItem* parent_):
 }
   
 Isometry2f WorldItem::poseInWorld() const {
-  if (! parent)
-    return pose_in_parent;
-  return parent->poseInWorld()*pose_in_parent;
+  if (! parent) //If I don't have any parent, I am the world
+    return pose_in_parent; 
+  return parent->poseInWorld() * pose_in_parent;
 }
 
 bool WorldItem::collides(const WorldItem* other) const {
@@ -79,7 +80,7 @@ void WorldItem::timerTick(float dt) {
       children.at(i)->timerTick(dt);
 }
 
-bool World::collides(const WorldItem* other) const {
+bool World::collides(const WorldItem* other) const { //This function shouldn't be called
   cerr << "AAAARGHHHHH" << endl;
   return false;
 }
