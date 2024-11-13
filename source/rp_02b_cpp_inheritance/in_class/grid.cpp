@@ -27,6 +27,7 @@ Grid::~Grid() {
   clear();
 }
 
+//This function is called by the lidar during the beam scan
 int Grid::scanSegment(int& x,
                       int& y,
                       float angle,

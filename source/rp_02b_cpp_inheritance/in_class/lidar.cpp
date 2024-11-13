@@ -42,14 +42,14 @@ void Lidar::timerTick(float dt) {
   Isometry2f lig=giw.inverse()*liw;
   float alpha_offset=lig.R.angle();
     
-  Vec2f lidar_origin=gmap->w2g(liw.t);
+  Vec2f lidar_origin=gmap->w2g(liw.t); //The angle position of the first beam
   float d_alpha=(scan.angle_end-scan.angle_start)/scan.num_beams;
   float alpha=scan.angle_start+alpha_offset;
   //cerr << "org: "<< lidar_origin << endl;
   for (int i=0; i<scan.num_beams; ++i) {
     int x_end=lidar_origin.x();
     int y_end=lidar_origin.y();
-    int range_int=gmap->scanSegment(x_end, y_end, alpha, 127, scan.range_max/gmap->resolution);
+    int range_int=gmap->scanSegment(x_end, y_end, alpha, 127, scan.range_max/gmap->resolution); 
     alpha+=d_alpha;
     float range=range_int*gmap->resolution;
     if (range<scan.range_min)
