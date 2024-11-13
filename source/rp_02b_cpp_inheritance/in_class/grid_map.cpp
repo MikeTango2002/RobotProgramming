@@ -26,16 +26,19 @@ bool GridMap::canCollide(const WorldItem* other) const {
 bool GridMap::collides(const WorldItem* item) const {
   if (! item->isDescendant(this))
     return false;
-  Vec2f gp=w2g(item->poseInWorld().t);
+  Vec2f gp=w2g(item->poseInWorld().t); //point in grid coordinates
   int r0=gp.x();
   int c0=gp.y();
   //cerr << "r0: " << r0 << " c0:" << c0 << endl;
   int radius=(int)(item->radius*inv_resolution);
-  int radius2=radius*radius;
+  int radius2=radius*radius; //radius2 is the square of this radius, which allows for a distance check within a circular area using the formula: x^2 + y^2 <= radius^2
   for (int r=-radius; r<radius; ++r){
     int rx=r+r0;
     for (int c=-radius; c<radius; ++c) {
       if (c*c+r*r>radius2)
+      //This line checks if the current cell (rx, cx) lies outside the circular area of interest.
+      //By calculating c * c + r * r, it gets the squared distance from the center (r0, c0) to the current cell (rx, cx).
+      //If this squared distance is greater than radius2 (i.e., c*c+r*r>radius2), the cell is outside the circle.
         continue;
       int cx=c+c0;
       if (! inside(rx,cx))

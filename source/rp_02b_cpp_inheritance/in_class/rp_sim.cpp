@@ -6,7 +6,8 @@
 int main (int argc, char** argv) {
   World w;
   cerr << "world created" << endl;
-  GridMap gmap(argv[1], 0.1, &w, Isometry2f(0,10,0.3));
+  GridMap gmap(argv[1], 0.1, &w, Isometry2f(0,0,0)); //this constructor requires a map. One is saved into: ../../test_data/cappero_laser_odom_diag_2020-05-06-16-26-03.png
+  cerr << "grid map created" << endl;
   DifferentialDriveRobot ddr(&gmap);
   ddr.pose_in_parent=Isometry2f(0,0,0);
   ddr.radius=1.5;
@@ -22,7 +23,7 @@ int main (int argc, char** argv) {
   LaserScan scan(90);
   Lidar lid(scan, &ddr);
   
-  // cerr << "gmap_loaded" << endl;
+  cerr << "gmap_loaded" << endl;
 
   Canvas canvas;
   canvas.init(gmap.rows/2, gmap.cols/2, 0.2);
