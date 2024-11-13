@@ -1,7 +1,7 @@
 #include "differential_drive_robot.h"
 
 void DifferentialDriveRobot::timerTick(float dt)  {
-  Isometry2f motion(dt*trans_vel, 0, dt*rot_vel);
+  Isometry2f motion(dt*trans_vel, 0, dt*rot_vel); //The second argument is 0 because we are assuming that the robot can only move translate along its current x-axis.
   Isometry2f old_pose_in_parent=pose_in_parent;
   pose_in_parent=pose_in_parent*motion;
 
@@ -27,5 +27,5 @@ void DifferentialDriveRobot::draw(Canvas& canvas) const {
   // cerr << "robot_origin: " << piw.t << endl;
   // cerr << "robot_endpoint: " << endpoint << endl;
     
-  WorldItem::draw(canvas);
+  WorldItem::draw(canvas); //Propagates the drawing function to the children
 }
