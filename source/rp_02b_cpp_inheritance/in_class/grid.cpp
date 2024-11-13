@@ -33,7 +33,7 @@ int Grid::scanSegment(int& x,
                       const CellType& val_min, //value of a wall pixel or of an obstacle pixel
                       const int max_range) const {
 
-  Vec2f dir(cos(angle),
+  Vec2f dir(cos(angle), //relazioni tra i lati di un triangolo rettangolo avente ipotenusa = 1
             sin(angle));
 
   Vec2f current(x,y);
