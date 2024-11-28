@@ -10,6 +10,7 @@
 class DistanceMapNode : public rclcpp::Node {
  public:
   DistanceMapNode() : Node("distance_map_node") {
+    // It is subscribed to the map topic: the simulator publishes the map and with this subscriber we capture it
     _map_sub = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
         "map", 10,
         std::bind(&DistanceMapNode::mapCallback, this, std::placeholders::_1));
@@ -19,28 +20,31 @@ class DistanceMapNode : public rclcpp::Node {
         "distance_map", 10);
     
     // Initialize publisher for row derivatives
-    // _dmap_drows_pub = // TODO;
+    _dmap_drows_pub = this -> create_publisher<nav_msgs::msg::OccupancyGrid>("drows", 10);
 
     // Initialize publisher for column derivatives
-    // _dmap_dcols_pub = // TODO;
+    _dmap_dcols_pub = this -> create_publisher<nav_msgs::msg::OccupancyGrid>("dcols", 10);
 
     // Initialize publisher for magnitudes
-    // _magnitudes_pub = // TODO;
+    _magnitudes_pub = this -> create_publisher<nav_msgs::msg::OccupancyGrid>("magnitudes", 10);
   }
 
  private:
+  
+  //This callback function is called when something is published on the "map" topic
   void mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
     RCLCPP_INFO(this->get_logger(), "Map size: [%dx%d] Creating distance map",
                 msg->info.width, msg->info.height);
     // Load the occupancy grid msg into the grid map and distance map
-    _grid_map.loadFromOccupancyGrid(*msg);
-    _distance_map.loadFromOccupancyGrid(*msg);
+    _grid_map.loadFromOccupancyGrid(*msg); // We fill our gridmap with the updated gridmap(it is inside "msg")
+    _distance_map.loadFromOccupancyGrid(*msg); // We now compute the distance map (we have for each cell the pointer to its closest neighbor obstacle)
+    // They are two different functions, because _grid_map and _distance_map are two different classes
 
     // Compute the distance map in metric space
-    _distance_map.extractDistancesSquared(_metric_dmap, _distance_map.d2_max());
+    _distance_map.extractDistancesSquared(_metric_dmap, _distance_map.d2_max()); // In this function we pass "_metric_dmap" that will be filled with the distances squared of every cell
     for (auto& cell : _metric_dmap._cells) {
       // From pixel^2 to meters
-      // cell = // TODO;
+      cell =  std::sqrt(cell) * _distance_map.resolution(); //cell is pixel^2 so I compute its square root, then I multiply it by the resolution of the distance map (resoultion is a function inherited from GridMapping)
     }
 
     RCLCPP_INFO(this->get_logger(), "Publishing distance map");
@@ -51,13 +55,16 @@ class DistanceMapNode : public rclcpp::Node {
 
     RCLCPP_INFO(this->get_logger(), "Publishing derivative maps");
     // TODO: Publish row derivatives
+    publishDerivatives(*msg, _dmap_drows, _dmap_drows_pub);
     // TODO: Publish column derivatives
+    publishDerivatives(*msg, _dmap_dcols, _dmap_dcols_pub);
 
     // Compute magnitudes of the gradients
     computeMagnitudes(_dmap_drows, _dmap_dcols, _magnitudes);
 
     RCLCPP_INFO(this->get_logger(), "Publishing magnitudes");
     // TODO: Publish magnitudes
+    publishDerivatives(*msg, _magnitudes, _magnitudes_pub);
   }
 
   void publishDistanceMap(const nav_msgs::msg::OccupancyGrid& map) {
@@ -68,7 +75,7 @@ class DistanceMapNode : public rclcpp::Node {
     metric_dmap_msg.data.resize(_metric_dmap.size());
 
     // Initialize the distances vector
-    std::vector<float> distances; // TODO
+    std::vector<float> distances(_distance_map.size());
 
     // Fill the distances vector with the metric distances
     for (size_t r = 0; r < _distance_map.rows(); ++r) {
@@ -76,15 +83,17 @@ class DistanceMapNode : public rclcpp::Node {
         size_t index =
             _distance_map.cols() * (_distance_map.rows() - r - 1) + c;
         // If the cell has no parent or is unknown, set the distance to 0
-        // if (// TODO) {
-        // }
+        if (_distance_map.at(r,c).parent == nullptr or _grid_map.at(r,c) == GridMap::UNKNOWN) {
+          distances[index] = 0.0;
+          continue;
+        }
         distances[index] = _metric_dmap.at(r, c);
       }
     }
-
+                                                
     // Get the minimum and maximum distances
-    // const float min_dist = // TODO;
-    // const float max_dist = // TODO;
+    const float min_dist = *std::min_element(distances.begin(), distances.end()); //These two functions returns the pointer to the element, so i use the * symbol
+    const float max_dist = *std::max_element(distances.begin(), distances.end());
 
     // Normalize the distances and fill the occupancy grid message
     for (size_t i = 0; i < distances.size(); i++) {
@@ -92,10 +101,11 @@ class DistanceMapNode : public rclcpp::Node {
         metric_dmap_msg.data[i] = 127;
       } else {
         // Normalize the distance
-        // float normalized_distance = // TODO;
+        float normalized_distance = (distances[i] - min_dist) / (max_dist - min_dist);
 
         // Fill the occupancy grid message
-        // metric_dmap_msg.data[i] = // TODO;
+        //It is a "nav_msgs/OccupancyGridMessage" --> I have to check the documentation online to see its fields
+        metric_dmap_msg.data[i] = static_cast<uint8_t>(normalized_distance * 100); //I have to multiply by 100 because (in the documentation says that) Occupancy probabilities are in the range [0, 100]
       }
     }
 

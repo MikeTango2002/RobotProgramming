@@ -17,14 +17,17 @@ inline void computeGradients(const Grid_<float>& metric_dmap,
                              Grid_<float>& drows, Grid_<float>& dcols) {
   // Resize the output gradients
   // TODO: resize the row gradient
+  drows.resize(metric_dmap.rows(), metric_dmap.cols());
   // TODO: resize the column gradient
+  dcols.resize(metric_dmap.rows(), metric_dmap.cols());
+
   for (unsigned int row = 1; row < metric_dmap.rows() - 1; ++row) {
     for (unsigned int col = 1; col < metric_dmap.cols() - 1; ++col) {
       // Compute the row gradient
-      // drows.at(row, col) = // TODO;
+      drows.at(row, col) = (metric_dmap.at(row+1,col) - metric_dmap.at(row-1, col)) / 2;
 
       // Compute the column gradient
-      // dcols.at(row, col) = // TODO;
+      dcols.at(row, col) =  (metric_dmap.at(row,col+1) - metric_dmap.at(row, col-1)) / 2;
     }
   }
 }
@@ -43,7 +46,8 @@ inline void computeMagnitudes(const Grid_<float>& drows,
   for (unsigned int row = 1; row < drows.rows() - 1; ++row) {
     for (unsigned int col = 1; col < drows.cols() - 1; ++col) {
       // Compute the squared norm of the gradient
-      // magnitudes.at(row, col) = // TODO;
+      const Eigen::Vector2f d(drows.at(row,col), dcols.at(row,col));
+      magnitudes.at(row, col) = d.squaredNorm();
     }
   }
 }

@@ -15,7 +15,7 @@ struct DMapCell {
  * Distance values are stored as unsigned int values.
  * The class is designed to be used for Localization or Path Planning.
  */
-struct DistanceMap : public Grid_<DMapCell>, public GridMapping {
+struct DistanceMap : public Grid_<DMapCell>, public GridMapping { //Similar to the GridMap used in the homework #1...
   using Grid_::inside;
   unsigned int _d2_max;
 
@@ -32,7 +32,7 @@ struct DistanceMap : public Grid_<DMapCell>, public GridMapping {
    * @param map
    * @return * void
    */
-  void loadFromOccupancyGrid(
+  void loadFromOccupancyGrid( //...the only thing that changes is this function
       const nav_msgs::msg::OccupancyGrid& map,
       unsigned int d2_max = std::numeric_limits<unsigned int>::max());
 
